@@ -1,0 +1,36 @@
+---
+title: "Dermatology Branch Journal Club"
+subtitle: "Kenneth Daily, Ph.D."
+author: "2014/08/01, <img src='images//NCI_logo_20140613_approx.png' height='100'>"
+output: 
+  ioslides_presentation:
+    css: default.css
+    pandoc_args: [
+      # "--biblio", "references.bib"
+      # "--csl", "ecology.csl"
+      ]
+    # logo: images/dhsnihnci.png
+    widescreen: true
+---
+
+```{r loadlibs, echo=FALSE, message=FALSE, warning=FALSE, include=TRUE}
+library(knitcitations)
+# library(ggplot2)
+# library(reshape)
+# library(plyr)
+# library(RColorBrewer)
+library(knitr)
+# library(xtable)
+# library(Vennerable)
+# library(gridExtra)
+
+options(xtable.type="html", xtable.caption.placement="top", xtable.include.row.names=FALSE)
+opts_chunk$set(comment=NA, echo=FALSE, warning=FALSE, message=FALSE, error=FALSE, fig.width=10, fig.height=5)
+
+# cleanbib()
+```
+
+
+## Thanks!
+
+
