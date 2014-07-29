@@ -30,10 +30,12 @@ opts_chunk$set(comment=NA, echo=FALSE, warning=FALSE, message=FALSE, error=FALSE
 # cleanbib()
 ```
 
+# Overview
+
 ## The Cancer Genome Atlas (TCGA) | Sequencing and data generation of cancer samples
 
 <div class='centered'>
-<img src="images/tcgapancancercoord.png" width="70%" alt="TCGA Data Coordination">
+<img src="images/tcgapancancercoord.png" height="80%" alt="TCGA Data Coordination">
 </div>
 
 <div class="notes">
@@ -45,11 +47,92 @@ Identifying the changes in each cancer’s complete set of DNA – its genome �
 
 Importantly, it proved that making the data freely available would enable researchers anywhere around the world to make and validate important discoveries. The success of the pilot led the National Institutes of Health to commit major resources to TCGA to collect and characterize more than 20 additional tumor types.
 
+Led to integrative analysis and publication of many papers detailing specific cancer types
+
+However, that's not the only way this data can be used.
+
+can reveal commonalities between all cancer types, shared molecular abnormalities in tumours that superficially seem distinct, and mutations that are confined to specific tumours.
+
+This led to the creation of the Pan-cancer initiative
+
 </div>
 
 ## The TCGA Pan-Cancer Initiative
 
-## Nature Genetics Focus on TCGA Pan-Cancer Initiative | [October 2013](http://www.nature.com/ng/focus/tcga/index.html)
+<div class='centered'>
+<img src="images/tcgapancancer2.png" height="80%" alt="TCGA Pan-Cancer Initiative">
+</div>
+
+<div class="notes">
+Put some notes here
+</div>
+
+# This paper
+
+## Focus on TCGA Pan-Cancer Initiative | [Nature Genetics October 2013](http://www.nature.com/ng/focus/tcga/index.html)
+
+<div class="notes">
+16 initial papers integrating TCGA data across cancer types
+</div>
+
+--- 
+
+<div class='centered'>
+<img src="images/title.png" width="95%" alt="Title of this paper">
+</div>
+
+<div class="notes">
+Put some notes here
+</div>
+
+## TL;DR { .smaller }
+
+- Analyzed $>3000$ tumors across $12$ different cancer types
+- Integrated multiple types of alterations (genomic & epigenomic)
+- Used (novel?!) hierarchical stratification approach to obtain clusters of tumors
+- Observed two major clusters
+    - M class: primarily somatic mutation
+    - C class: primarily copy number alterations 
+- Inverse relationship between # of copy number alterations & # of somatic mutations (when averaged over 12 cancer types)
+- Oncogenic signatures were used to derive the oncogenic pathways
+- Nominated therapeutically actionable targets across tumor types
+
+## Analyzed $>3000$ tumors | $12$ different cancer types
+
+<div class='centered'>
+<img src="images/table1.png" width="50%" alt="Samples">
+</div>
+
+## Integrated multiple types of alterations | Copy number aberrations (CNAs)
+
+<div class='centered'>
+<img src="images/fig1a1.png" width="70%" alt="CNAs 1">
+</div>
+
+## Integrated multiple types of alterations | Copy number aberrations (CNAs)
+
+<div class='centered'>
+<img src="images/fig1a2.png" width="60%" alt="CNAs 2">
+</div>
+
+
+## Used (novel?!) hierarchical stratification approach to obtain clusters of tumors
+
+<div class='centered'>
+<img src="images/eqns.png" width="55%" alt="Equations">
+</div>
+
+## Observed two major clusters | M(utations) vs C(opy) number alterations
+
+<div class='centered'>
+<img src="images/fig3a.png" width="95%" alt="hier strat 2">
+</div>
+
+## Inverse relationship b/t CNA and SNV | Cancer hyperbol[a|e]
+
+## Oncogenic signatures were used to derive the oncogenic pathways
+
+## Nominated therapeutically actionable targets across tumor types
 
 ## Thanks!
 
