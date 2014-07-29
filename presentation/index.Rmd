@@ -1,7 +1,7 @@
 ---
 title: "Dermatology Branch Journal Club"
-subtitle: "Kenneth Daily, Ph.D."
-author: "2014/08/01, <img src='images//NCI_logo_20140613_approx.png' height='100'>"
+subtitle: "2014/08/01     |     Kenneth Daily, Ph.D."
+author: "<img src='images//NCI_logo_20140613_approx.png' height='100'>"
 output: 
   ioslides_presentation:
     css: default.css
@@ -30,6 +30,26 @@ opts_chunk$set(comment=NA, echo=FALSE, warning=FALSE, message=FALSE, error=FALSE
 # cleanbib()
 ```
 
+## The Cancer Genome Atlas (TCGA) | Sequencing and data generation of cancer samples
+
+<div class='centered'>
+<img src="images/tcgapancancercoord.png" width="70%" alt="TCGA Data Coordination">
+</div>
+
+<div class="notes">
+systematically explore the entire spectrum of genomic changes involved in more than 20 types of human cancer
+
+$>$ 200 forms of cancer, and many more subtypes, caused by errors in DNA that cause cells to grow uncontrolled.
+
+Identifying the changes in each cancer’s complete set of DNA – its genome – and understanding how such changes interact to drive the disease will lay the foundation for improving cancer prevention, early detection and treatment.
+
+Importantly, it proved that making the data freely available would enable researchers anywhere around the world to make and validate important discoveries. The success of the pilot led the National Institutes of Health to commit major resources to TCGA to collect and characterize more than 20 additional tumor types.
+
+</div>
+
+## The TCGA Pan-Cancer Initiative
+
+## Nature Genetics Focus on TCGA Pan-Cancer Initiative | [October 2013](http://www.nature.com/ng/focus/tcga/index.html)
 
 ## Thanks!
 
