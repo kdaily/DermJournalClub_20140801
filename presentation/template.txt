@@ -1,0 +1,8 @@
+## Slide Template | A template for a slide
+<div class='centered'>
+<img src="" width="70%" alt="Image Text Here">
+</div>
+
+<div class="notes">
+Put some notes here
+</div>
