@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="drawing.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Lend"
+       style="overflow:visible;">
+      <path
+         id="path3670"
+         style="font-size:12.0;fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) rotate(180) translate(1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;">
+      <path
+         id="path3652"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none;"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+    <inkscape:perspective
+       id="perspective2826"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2826-3"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2826-7"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4511"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend-6"
+       style="overflow:visible">
+      <path
+         id="path3670-4"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <inkscape:perspective
+       id="perspective4539"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4591"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4630"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend-8"
+       style="overflow:visible">
+      <path
+         id="path3670-1"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <inkscape:perspective
+       id="perspective4658"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4689"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend-0"
+       style="overflow:visible">
+      <path
+         id="path3670-9"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="195.5"
+     inkscape:cy="710"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:snap-global="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
+     inkscape:window-x="0"
+     inkscape:window-y="26"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g4468"
+       transform="translate(97,-52)">
+      <g
+         transform="translate(-55,-101)"
+         id="g3632">
+        <rect
+           style="fill:#000dff;fill-opacity:1;stroke:#000000;stroke-width:2.90114093;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           id="rect2816"
+           width="140.68929"
+           height="83.080475"
+           x="175.43156"
+           y="193.11685" />
+        <rect
+           style="fill:#000dff;fill-opacity:1;stroke:#000000;stroke-width:2.90114093;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           id="rect2816-6"
+           width="140.68929"
+           height="83.080475"
+           x="167.24744"
+           y="184.85289" />
+        <rect
+           style="fill:#000dff;fill-opacity:1;stroke:#000000;stroke-width:2.90114093;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           id="rect2816-67"
+           width="140.68929"
+           height="83.080475"
+           x="159.06331"
+           y="175.59724" />
+        <rect
+           style="fill:#000dff;fill-opacity:1;stroke:#000000;stroke-width:2.90114093;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           id="rect2816-9"
+           width="140.68929"
+           height="83.080475"
+           x="150.87917"
+           y="167.8842" />
+      </g>
+      <text
+         id="text3638"
+         y="98.362183"
+         x="168"
+         style="font-size:32px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           style="text-align:center;text-anchor:middle;fill:#ffffff"
+           y="98.362183"
+           x="168"
+           id="tspan3640"
+           sodipodi:role="line">3299</tspan><tspan
+           style="text-align:center;text-anchor:middle;fill:#ffffff"
+           id="tspan3642"
+           y="138.36218"
+           x="168"
+           sodipodi:role="line">Tumors</tspan></text>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.13387668;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Lend)"
+       d="m 275.48003,130.83463 0,30.27158 0,0.3881"
+       id="path3644" />
+    <g
+       id="g4761"
+       transform="translate(-41,-93)">
+      <rect
+         y="259.44373"
+         x="158.58154"
+         height="74.836945"
+         width="315.83694"
+         id="rect4478"
+         style="fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:2.16305995;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <text
+         id="text4480"
+         y="278.36218"
+         x="316.77246"
+         style="font-size:10px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           style="font-size:18px;text-align:center;text-anchor:middle"
+           y="278.36218"
+           x="316.77246"
+           id="tspan4482"
+           sodipodi:role="line">Copy Number Alterations (CNAS)</tspan><tspan
+           style="font-size:18px;text-align:center;text-anchor:middle"
+           id="tspan4484"
+           y="300.86218"
+           x="316.77246"
+           sodipodi:role="line">Somatic Mutations (SNVs)</tspan><tspan
+           style="font-size:18px;text-align:center;text-anchor:middle"
+           id="tspan4486"
+           y="323.36218"
+           x="316.77246"
+           sodipodi:role="line">DNA Methylations</tspan></text>
+    </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4488"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Bitstream Vera Sans;font-style:normal;font-weight:normal;font-size:10"><flowRegion
+         id="flowRegion4490"><rect
+           id="rect4492"
+           width="49"
+           height="13"
+           x="129"
+           y="273.36218" /></flowRegion><flowPara
+         id="flowPara4494"></flowPara></flowRoot>    <path
+       style="fill:none;stroke:#000000;stroke-width:1.16737545;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Lend)"
+       d="m 275.47944,247.7181 0,32.17215 0,0.41246"
+       id="path3644-0" />
+    <g
+       id="g4752"
+       transform="translate(-41,-105)">
+      <rect
+         y="390.33374"
+         x="233.47154"
+         height="27.056925"
+         width="166.05693"
+         id="rect4478-5"
+         style="fill:#ff8700;fill-opacity:1;stroke:#000000;stroke-width:0.94307625;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <text
+         id="text4480-1"
+         y="409.86218"
+         x="316"
+         style="font-size:10px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           style="font-size:18px;text-align:center;text-anchor:middle"
+           id="tspan4486-8"
+           y="409.86218"
+           x="316"
+           sodipodi:role="line">Recurrent Events</tspan></text>
+    </g>
+    <rect
+       style="fill:#78d83b;fill-opacity:1;stroke:#000000;stroke-width:0.94307625;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect4478-5-7"
+       width="166.05693"
+       height="27.056925"
+       x="21.971535"
+       y="250.83371" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="104.49997"
+       y="270.36215"
+       id="text4480-1-0"><tspan
+         sodipodi:role="line"
+         x="104.49997"
+         y="270.36215"
+         id="tspan4486-8-9"
+         style="font-size:18px;text-align:center;text-anchor:middle">Gene Expression</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.55448687;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Lend)"
+       d="m 201.54948,264.38955 58.8593,0 0.7546,0"
+       id="path3644-0-9" />
+    <g
+       id="g4768"
+       transform="translate(-41,-117)">
+      <rect
+         y="469.12012"
+         x="194.25797"
+         height="47.484074"
+         width="244.48407"
+         id="rect4478-5-9"
+         style="fill:#ffc200;fill-opacity:1;stroke:#000000;stroke-width:1.51592731;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <text
+         id="text4480-1-2"
+         y="488.36218"
+         x="316.35059"
+         style="font-size:10px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           style="font-size:18px;text-align:center;text-anchor:middle"
+           id="tspan4486-8-4"
+           y="488.36218"
+           x="316.35059"
+           sodipodi:role="line">Selected Functional Events</tspan><tspan
+           id="tspan4712"
+           style="font-size:18px;text-align:center;text-anchor:middle"
+           y="510.86218"
+           x="316.35059"
+           sodipodi:role="line">SFEs</tspan></text>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.09923375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Lend)"
+       d="m 275.48064,318.68403 0,28.37211 0,0.36374"
+       id="path3644-0-8" />
+  </g>
+</svg>
