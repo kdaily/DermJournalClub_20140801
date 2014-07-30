@@ -386,6 +386,12 @@ This is definitely only a starting place, and more samples and cancer types are 
 <img src="images/synapse_ng.2761-F2.png" height="80%" alt="Synapse">
 </div>
 
-## Thanks!
+---
 
+<br />
+<br />
+
+<div class="centered">
+<span style="font-size: 500%">Thanks!</span>
+</div>
 
