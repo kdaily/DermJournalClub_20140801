@@ -132,10 +132,21 @@ BRCA, COADREAD, UCEC (endometroid) separated into their molecular subtypes from 
 
 <div class='centered'>
 <img src="images/flowchart.png" height="70%" alt="Data processing flowchart">
+
+<br />
+
+479 alterations - 199 SNVs, 116 CN gains, 151 CN losses, 13 methylation events, treated as binary variables (occured or not occured)
+
 </div>
 
 <div class="notes">
-Put some notes here
+First, only considered recurrent (present in two or more samples)
+Reduced copy number data using the algorithm GISTIC, combined with RNA-seq based expression data to only include genes affected by CNs whose expression was also altered (e.g. deletion significantly reduced expression relative to samples diploid at that position)
+
+Somatic mutations were reduced using MuSiC and MutSig (determine significance of mutated genes compared to local background mutation rates)
+
+Used a previously determined panel of genes with epigenetic silencing (also filtered using RNAseq data for genes with change in mRNA levels)
+
 </div>
 
 ## Integrated multiple types of alterations | Copy number aberrations (CNAs)
@@ -150,6 +161,10 @@ Put some notes here
 <img src="images/fig1a2.png" width="60%" alt="CNAs 2">
 </div>
 
+<div class="notes">
+Frequent loss of CDK2NA, MYC, other known cancer-related genes
+</div>
+
 ## Integrated multiple types of alterations | Somatic mutations (SNVs)
 
 <div class='centered'>
@@ -160,6 +175,10 @@ Put some notes here
 
 <div class='centered'>
 <img src="images/fig1b2.png" width="60%" alt="SNVs 2">
+</div>
+
+<div class="notes">
+Most freq mutation in P53 (50% of cases)
 </div>
 
 ## Integrated multiple types of alterations | DNA methylation
@@ -183,36 +202,56 @@ Put some notes here
 
 <div class="notes">
 stratify the >3000 tumors based on the 479 selected functional events
-certain tumor types were resoundingly characterized by a high frequency of copy number alterations (C class) (OV, BRCA, LUSC, HNSC)
-or somatic mutations (S class) (KIRC, COAD, READ, GBM, LAML, UCEC)
-while other tumor types showed a strong mix of both types of alterations (LUAD, BLCA).
-
-As has been described in multiple tumor subtypes previously, when evaluating individual tumors, an inverse relationship was observed between the extremes – tumors had either a large number of somatic mutations or a large number of copy number alterations but never both
 </div>
 
-## Hierarchical stratification to obtain clusters
+## Hierarchical stratification to obtain clusters | Network modularity
 
 <div class='centered'>
 <img src="images/figS12_1.png" width="75%" alt="Cluster example 1">
 </div>
 
 <div class="notes">
+The data can be described as a mathematical structure called a bi-partite graph - nodes are samples or alterations, edges connect a sample that has a specific alteration.
+
+The problem of clustering can then be solved as partitioning the graph into modules based on their connectivity (edges). 
+
+This can be applied multiple times within each module to identify sub-modules, etc.
+
+Hence, this method is essentially a type of hierarchical clustering.
+
+For example, we have two node types here that have been partitioned into two modules, and each module has been partitioned into sub-modules.
+
 </div>
 
-## Hierarchical stratification to obtain clusters
+## Hierarchical stratification to obtain clusters | Network modularity
 
 <div class='centered'>
 <img src="images/figS12_2.png" width="75%" alt="Cluster example 2">
 </div>
 
 <div class="notes">
+This network is not one for tumors, but for a dataset to test that their algorithm works
+from a study of "The Deep South: A Social Anthropological Study of Caste and Class"
+
+Also tested a network of Scottish company relationships in the 20th century...
+
+These were 
 
 </div>
 
 ## Observed two major clusters | M(utations) vs C(opy) number alterations
 
 <div class='centered'>
-<img src="images/fig3a.png" width="95%" alt="hier strat 2">
+<img src="images/fig2a.png" width="55%" alt="Fig 2a">
+
+</div>
+
+<div class="notes">
+certain tumor types were resoundingly characterized by a high frequency of copy number alterations (C class) (OV, BRCA, LUSC, HNSC)
+or somatic mutations (S class) (KIRC, COAD, READ, GBM, LAML, UCEC)
+while other tumor types showed a strong mix of both types of alterations (LUAD, BLCA).
+
+
 </div>
 
 ## Features correspond to identified classes
@@ -221,14 +260,43 @@ As has been described in multiple tumor subtypes previously, when evaluating ind
 <img src="images/fig2b.png" width="55%" alt="Fig 2b">
 </div>
 
+<div class="notes">
+It's important to note that the algorithm had no idea which features were somatic mutations and which were copy number changes or methylation events.
+
+Also, we see that p53 is an exception - it was actually the most significant feature in the C class (q = $10^{-176}$!!!!) Not sure what the kind of p-value even means...
+
+Though, 30% of the M-class also has p53 mutations
+</div>
+
 ## Inverse relationship b/t CNA and SNV | Cancer hyperbol[a|e]
 
 <div class='centered'>
 <img src="images/fig2c_S2.png" width="85%" alt="Fig 2b">
 </div>
 
+<div class="notes">
+As has been described in multiple tumor subtypes previously, when evaluating individual tumors, an inverse relationship was observed between the extremes – tumors had either a large number of somatic mutations or a large number of copy number alterations but never both
+</div>
 
-## Signatures used to derive oncogenic pathways
+## Inverse relationship b/t CNA and SNV | Cancer hyperbol[a|e]
+
+<div class='centered'>
+<img src="images/figS3.png" width="55%" alt="Fig S3">
+</div>
+
+<div class="notes">
+If we look at these individually and how they distribute based on the number of CNs and SVs, we can see a few strong signals, but a few are kind of questionable.
+But in some sense, this argues for a signature approach vs a tissue approach, as some tissue types have large variation on either axis.
+Importantly, there are no samples that are in the upper right of the plot - high CN AND high SNV.
+</div>
+
+## Validation PANCAN18 dataset
+
+<div class='centered'>
+<img src="images/figS4.png" width="65%" alt="Fig S4">
+</div>
+
+## Signatures used to derive oncogenic pathways | The M class
 
 <div class='centered'>
 <img src="images/fig3M.png" width="85%" alt="Figure 3M">
@@ -236,10 +304,20 @@ As has been described in multiple tumor subtypes previously, when evaluating ind
 
 <div class="notes">
 each subclass is defined by a core set of alterations common to those tumors (see supplemental figure 5 for details).
-Key M Class alterations included mutations of ARID1A, CTCF, APC, TP53 and KRAS
-Key C Class alterations were initially defined by TP53 mutation and the absence or presence of copy number alterations on chromosome 8.  
 
-And while some subclasses were dominated by one particular tumor type, others were a mix of tumor types
+The M class included the majority of kidney, glioblast, AML, colo, uterine cancers; these were recursively divided into 17 subclasses.
+
+First subclass had alterations to the PI3K-AKT pathway genes
+Second subclass had alterations to APC-TP3-KRAS. 
+
+Across the M Class alterations included mutations of ARID1A and CTCF, specifically hotspot mutations (including novel hotspot in ARID1A)
+
+In the case of CTCF, variants were found across cancer types (predominantly breast luminbal, endometrial, and a few H&N and kidney) in subclass M5 that hit different zinc fingers, which CTCF uses for sequence selective DNA binding.
+This indicates selection for zinc finger loss in this subset of samples not that is not tumor type specific
+
+
+Most M sub-classes were tissue-independent (M1-M14)
+However, M15-M17 were predominantly tissue-specific subsets (GBM (EGFR), LAML (NPM1), and KIRC (VHL))
 
 </div>
 
@@ -249,6 +327,36 @@ And while some subclasses were dominated by one particular tumor type, others we
 <img src="images/fig3C.png" width="85%" alt="Figure 3C">
 </div>
 
+<div class="notes">
+Key C Class alterations were initially defined by TP53 mutation recurrent CN amplification and deletions.
+
+Included Ovarian, breast, most lung squamous, H&N, and serous UCEC.
+
+and the absence or presence of copy number alterations on chromosome 8, which is where the MYC oncogene is located.
+
+subclasses C3 and C4 (majority of LUSC and HNSC tumors) had strong, significant cross-cancer similarity where different alterations hit the same pathway (RB-mediated cell cycle control - loss of CDKN2A in C3 and gain of CCND1 in C4 samples)
+
+Subclasses C7 - C14 had alterations to the cell cycle arrest and DNA damage response from multiple routes that were not tissue specific (e.g. Aurora Kinase amplification, BRCA1/BRCA2 loss, CCNE1 amp, E2F3 amp)
+
+</div>
+
+## Therapeutically actionable targets | across tumor types
+
+<div class='centered'>
+<img src="images/fig4.png" width="95%" alt="Figure 4">
+</div>
+
+<div class="notes">
+Many of the selected functional events are also druggable targets, either alone or in combination, so took a subset of the SFEs to focus on.
+However, none of these alterations are exclusive to one tumor type nor present in 100% of samples in a particular tumor type
+focusing on the ~500 selected functional events to start, this approach would reduce the complexity of initial results for an individual tumor
+
+Looking at 4 major pathways, the majority of all samples are affected in some way by one of these, which have targets either directly or indirectly actionable with therapeutics. 
+
+Quite a confusing figure with lots going on, so focusing across cancer types and considering signature-based types, there are also potential drug combos that can be applied. 
+
+</div>
+
 ## Therapeutically actionable targets | across tumor types
 
 <div class='centered'>
@@ -256,14 +364,13 @@ And while some subclasses were dominated by one particular tumor type, others we
 </div>
 
 <div class="notes">
-These clustering results have a significant clinical impact.
-Many of the selected functional events are also druggable targets, either alone or in combination.
-However, none of these alterations are exclusive to one tumor type nor present in 100% of samples in a particular tumor type
-
 suggested that a tumor be classified in a tissue-independent manner, based on the genetic and epigenetic alterations present
 
-focusing on the ~500 selected functional events to start, this approach would reduce the complexity of initial results for an individual tumor
+For example, M4-M8 subgroups could be targeted in combo with PIK3A/AKT/mTOR drugs;
 
+M15 subclass could be hit with EGFR and CDK4 inhibitors.
+
+This is definitely only a starting place, and more samples and cancer types are needed.
 </div>
 
 ## Data, metadata, and analyses | Synapse by Sage BioNetworks
