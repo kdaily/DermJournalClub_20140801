@@ -343,7 +343,7 @@ Subclasses C7 - C14 had alterations to the cell cycle arrest and DNA damage resp
 ## Therapeutically actionable targets | across tumor types
 
 <div class='centered'>
-<img src="images/fig4.png" width="95%" alt="Figure 4">
+<img src="images/fig4.png" width="35%" alt="Figure 4">
 </div>
 
 <div class="notes">
@@ -373,7 +373,14 @@ M15 subclass could be hit with EGFR and CDK4 inhibitors.
 This is definitely only a starting place, and more samples and cancer types are needed.
 </div>
 
-## Data, metadata, and analyses | Synapse by Sage BioNetworks
+## Conclusions
+
+- Two major classes of tumors with different oncogenic drivers (mutation and copy number change)
+- Argues for tissue-independent classification and treatment of tumors
+- Almost all solid tumors, many other tumor types not covered
+- Though the methods should get better with more data
+
+## Synapse by Sage BioNetworks
 
 <div class='centered'>
 <img src="images/synapse_ng.2761-F2.png" height="80%" alt="Synapse">
