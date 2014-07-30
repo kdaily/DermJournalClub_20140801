@@ -41,7 +41,7 @@ opts_chunk$set(comment=NA, echo=FALSE, warning=FALSE, message=FALSE, error=FALSE
 <div class="notes">
 systematically explore the entire spectrum of genomic changes involved in more than 20 types of human cancer
 
-$>$ 200 forms of cancer, and many more subtypes, caused by errors in DNA that cause cells to grow uncontrolled.
+$> 200$ forms of cancer, and many more subtypes, caused by errors in DNA that cause cells to grow uncontrolled.
 
 Identifying the changes in each cancer’s complete set of DNA – its genome – and understanding how such changes interact to drive the disease will lay the foundation for improving cancer prevention, early detection and treatment.
 
@@ -65,6 +65,12 @@ This led to the creation of the Pan-cancer initiative
 
 <div class="notes">
 Put some notes here
+</div>
+
+## Data, metadata, and analyses handled by Synapse | Sage BioNetworks
+
+<div class='centered'>
+<img src="images/synapse_ng.2761-F2.png" height="80%" alt="Synapse">
 </div>
 
 # This paper
@@ -128,11 +134,35 @@ Put some notes here
 <img src="images/fig3a.png" width="95%" alt="hier strat 2">
 </div>
 
+## Features correspond to identified classes
+
+<div class='centered'>
+<img src="images/fig2b.png" width="75%" alt="Fig 2b">
+</div>
+
 ## Inverse relationship b/t CNA and SNV | Cancer hyperbol[a|e]
+
+<div class='centered'>
+<img src="images/fig2c.png" width="75%" alt="Fig 2b">
+</div>
 
 ## Oncogenic signatures were used to derive the oncogenic pathways
 
+<div class='centered'>
+<img src="images/fig3M.png" width="95%" alt="Figure 3M">
+</div>
+
+## Oncogenic signatures were used to derive the oncogenic pathways
+
+<div class='centered'>
+<img src="images/fig3C.png" width="95%" alt="Figure 3C">
+</div>
+
 ## Nominated therapeutically actionable targets across tumor types
+
+<div class='centered'>
+<img src="images/fig5.png" width="95%" alt="Figure 5">
+</div>
 
 ## Thanks!
 
