@@ -5,6 +5,7 @@ author: "<img src='images//NCI_logo_20140613_approx.png' height='100'>"
 output: 
   ioslides_presentation:
     css: default.css
+    highlight: zenburn
     pandoc_args: [
       # "--biblio", "references.bib"
       # "--csl", "ecology.csl"
@@ -30,7 +31,7 @@ opts_chunk$set(comment=NA, echo=FALSE, warning=FALSE, message=FALSE, error=FALSE
 # cleanbib()
 ```
 
-# Overview
+# The Cancer Genome Atlas and the Pan-Cancer Initiative
 
 ## The Cancer Genome Atlas (TCGA) | Sequencing and data generation of cancer samples
 
@@ -39,9 +40,11 @@ opts_chunk$set(comment=NA, echo=FALSE, warning=FALSE, message=FALSE, error=FALSE
 </div>
 
 <div class="notes">
-systematically explore the entire spectrum of genomic changes involved in more than 20 types of human cancer
-
 $> 200$ forms of cancer, and many more subtypes, caused by errors in DNA that cause cells to grow uncontrolled.
+
+HT techniques have allowed researchers to systematically explore the entire spectrum of genomic changes in many cancer types, many individual samples
+
+TCGA is performing this in more than 20 types of human cancer, about halfway done
 
 Identifying the changes in each cancer’s complete set of DNA – its genome – and understanding how such changes interact to drive the disease will lay the foundation for improving cancer prevention, early detection and treatment.
 
@@ -50,8 +53,6 @@ Importantly, it proved that making the data freely available would enable resear
 Led to integrative analysis and publication of many papers detailing specific cancer types
 
 However, that's not the only way this data can be used.
-
-can reveal commonalities between all cancer types, shared molecular abnormalities in tumours that superficially seem distinct, and mutations that are confined to specific tumours.
 
 This led to the creation of the Pan-cancer initiative
 
@@ -64,21 +65,34 @@ This led to the creation of the Pan-cancer initiative
 </div>
 
 <div class="notes">
-Put some notes here
+can reveal commonalities between all cancer types, shared molecular abnormalities in tumours that superficially seem distinct, and mutations that are confined to specific tumours.
+
 </div>
 
-## Data, metadata, and analyses handled by Synapse | Sage BioNetworks
-
-<div class='centered'>
-<img src="images/synapse_ng.2761-F2.png" height="80%" alt="Synapse">
-</div>
-
-# This paper
-
-## Focus on TCGA Pan-Cancer Initiative | [Nature Genetics October 2013](http://www.nature.com/ng/focus/tcga/index.html)
+# Focus on TCGA Pan-Cancer Initiative | [Nature Genetics October 2013](http://www.nature.com/ng/focus/tcga/index.html)
 
 <div class="notes">
 16 initial papers integrating TCGA data across cancer types
+</div>
+
+## TCGA analysis | Two fundamental observations
+
+- __Intra-cancer heterogeneity__
+
+    > Tumors originating in the same tissue vary substantially in genomic alterations.
+
+<br />
+<br />
+
+- Cross-cancer similarity
+
+    > Similar patterns of genomic alteration are observed in tumors from different tissues of origin.
+
+<div class="notes">
+A number of TCGA papers focusing on both single cancer types as well as some smaller scale cross-cancer studies have identified two fundamental observations (that really were previously known aside from using HT data to do so)
+
+These findings argue for therapeutic protocols that are based not on the tissue of origin, but on the genomic traits of the tumor observed (within reason, obviously).
+
 </div>
 
 --- 
@@ -88,25 +102,40 @@ Put some notes here
 </div>
 
 <div class="notes">
-Put some notes here
+The paper under discussion today, titled "Emerging landscape of oncogenic signatures across human cancers," provides one approach for classifying individual tumors based not on their tissue of origin, but rather their selected functional events and uses data from the TCGA to do so.
+
 </div>
 
 ## TL;DR { .smaller }
 
-- Analyzed $>3000$ tumors across $12$ different cancer types
+- $3299$ tumors across $12$ different cancer types
 - Integrated multiple types of alterations (genomic & epigenomic)
-- Used (novel?!) hierarchical stratification approach to obtain clusters of tumors
+- Hierarchical stratification approach to obtain clusters of tumors
 - Observed two major clusters
     - M class: primarily somatic mutation
-    - C class: primarily copy number alterations 
+    - C class: primarily copy number alterations
 - Inverse relationship between # of copy number alterations & # of somatic mutations (when averaged over 12 cancer types)
 - Oncogenic signatures were used to derive the oncogenic pathways
 - Nominated therapeutically actionable targets across tumor types
 
-## Analyzed $>3000$ tumors | $12$ different cancer types
+## $>3299$ tumors, $12$ different cancer types | PANCAN12 dataset
 
 <div class='centered'>
 <img src="images/table1.png" width="50%" alt="Samples">
+</div>
+
+<div class="notes">
+BRCA, COADREAD, UCEC (endometroid) separated into their molecular subtypes from previous studies (e.g. BRCA to ER$^+$, HER2, triple-neg/basal-like)
+</div>
+
+## Data reduction
+
+<div class='centered'>
+<img src="images/flowchart.png" height="70%" alt="Data processing flowchart">
+</div>
+
+<div class="notes">
+Put some notes here
 </div>
 
 ## Integrated multiple types of alterations | Copy number aberrations (CNAs)
@@ -121,11 +150,63 @@ Put some notes here
 <img src="images/fig1a2.png" width="60%" alt="CNAs 2">
 </div>
 
+## Integrated multiple types of alterations | Somatic mutations (SNVs)
 
-## Used (novel?!) hierarchical stratification approach to obtain clusters of tumors
+<div class='centered'>
+<img src="images/fig1b1.png" width="70%" alt="SNVs 1">
+</div>
+
+## Integrated multiple types of alterations | Somatic mutations (SNVs)
+
+<div class='centered'>
+<img src="images/fig1b2.png" width="60%" alt="SNVs 2">
+</div>
+
+## Integrated multiple types of alterations | DNA methylation
+
+<div class='centered'>
+<img src="images/fig1c1.png" width="70%" alt="Methyl 1">
+</div>
+
+## Integrated multiple types of alterations | DNA methylation
+
+<div class='centered'>
+<img src="images/fig1c2.png" width="60%" alt="Methyl 2">
+</div>
+
+
+## Hierarchical stratification to obtain clusters of tumors
 
 <div class='centered'>
 <img src="images/eqns.png" width="55%" alt="Equations">
+</div>
+
+<div class="notes">
+stratify the >3000 tumors based on the 479 selected functional events
+certain tumor types were resoundingly characterized by a high frequency of copy number alterations (C class) (OV, BRCA, LUSC, HNSC)
+or somatic mutations (S class) (KIRC, COAD, READ, GBM, LAML, UCEC)
+while other tumor types showed a strong mix of both types of alterations (LUAD, BLCA).
+
+As has been described in multiple tumor subtypes previously, when evaluating individual tumors, an inverse relationship was observed between the extremes – tumors had either a large number of somatic mutations or a large number of copy number alterations but never both
+</div>
+
+## Hierarchical stratification to obtain clusters
+
+<div class='centered'>
+<img src="images/figS12_1.png" width="75%" alt="Cluster example 1">
+</div>
+
+<div class="notes">
+</div>
+
+## Hierarchical stratification to obtain clusters
+
+<div class='centered'>
+<img src="images/figS12_2.png" width="75%" alt="Cluster example 2">
+</div>
+
+<div class="notes">
+
 </div>
 
 ## Observed two major clusters | M(utations) vs C(opy) number alterations
@@ -137,31 +218,58 @@ Put some notes here
 ## Features correspond to identified classes
 
 <div class='centered'>
-<img src="images/fig2b.png" width="75%" alt="Fig 2b">
+<img src="images/fig2b.png" width="55%" alt="Fig 2b">
 </div>
 
 ## Inverse relationship b/t CNA and SNV | Cancer hyperbol[a|e]
 
 <div class='centered'>
-<img src="images/fig2c.png" width="75%" alt="Fig 2b">
+<img src="images/fig2c_S2.png" width="85%" alt="Fig 2b">
 </div>
 
-## Oncogenic signatures were used to derive the oncogenic pathways
+
+## Signatures used to derive oncogenic pathways
 
 <div class='centered'>
-<img src="images/fig3M.png" width="95%" alt="Figure 3M">
+<img src="images/fig3M.png" width="85%" alt="Figure 3M">
 </div>
 
-## Oncogenic signatures were used to derive the oncogenic pathways
+<div class="notes">
+each subclass is defined by a core set of alterations common to those tumors (see supplemental figure 5 for details).
+Key M Class alterations included mutations of ARID1A, CTCF, APC, TP53 and KRAS
+Key C Class alterations were initially defined by TP53 mutation and the absence or presence of copy number alterations on chromosome 8.  
+
+And while some subclasses were dominated by one particular tumor type, others were a mix of tumor types
+
+</div>
+
+## Signatures used to derive oncogenic pathways
 
 <div class='centered'>
-<img src="images/fig3C.png" width="95%" alt="Figure 3C">
+<img src="images/fig3C.png" width="85%" alt="Figure 3C">
 </div>
 
-## Nominated therapeutically actionable targets across tumor types
+## Therapeutically actionable targets | across tumor types
 
 <div class='centered'>
 <img src="images/fig5.png" width="95%" alt="Figure 5">
+</div>
+
+<div class="notes">
+These clustering results have a significant clinical impact.
+Many of the selected functional events are also druggable targets, either alone or in combination.
+However, none of these alterations are exclusive to one tumor type nor present in 100% of samples in a particular tumor type
+
+suggested that a tumor be classified in a tissue-independent manner, based on the genetic and epigenetic alterations present
+
+focusing on the ~500 selected functional events to start, this approach would reduce the complexity of initial results for an individual tumor
+
+</div>
+
+## Data, metadata, and analyses | Synapse by Sage BioNetworks
+
+<div class='centered'>
+<img src="images/synapse_ng.2761-F2.png" height="80%" alt="Synapse">
 </div>
 
 ## Thanks!
