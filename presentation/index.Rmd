@@ -32,8 +32,6 @@ output:
 # cleanbib()
 ```
 
-# The Cancer Genome Atlas and the Pan-Cancer Initiative
-
 ## The Cancer Genome Atlas (TCGA) | Assay and analyze cancer samples
 
 <div class='centered'>
