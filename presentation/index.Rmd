@@ -407,11 +407,10 @@ This is definitely only a starting place, and more samples and cancer types are 
 
 An Analysis is a new analysis of existing data (typically large genomic, transcriptomic or proteomic data sets from arrays or other high-throughput platforms) or new data obtained in a comparative analysis of technologies __that lead to novel and arresting conclusions of importance to a broad audience.__
 
-
-## Synapse by Sage BioNetworks
+## <img src="images/Sage_Bionetworks_logo.jpg" height="15%" alt="Sage Bionetworks">
 
 <div class='centered'>
-<img src="images/synapse_ng.2761-F2.png" height="80%" alt="Synapse">
+<img src="images/synapse_ng.2761-F2.png" height="75%" alt="Synapse">
 </div>
 
 ---
