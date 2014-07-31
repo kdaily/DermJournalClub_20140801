@@ -16,18 +16,18 @@ output:
 ---
 
 ```{r loadlibs, echo=FALSE, message=FALSE, warning=FALSE, include=TRUE}
-library(knitcitations)
+# library(knitcitations)
 # library(ggplot2)
 # library(reshape)
 # library(plyr)
 # library(RColorBrewer)
-library(knitr)
+# library(knitr)
 # library(xtable)
 # library(Vennerable)
 # library(gridExtra)
 
-options(xtable.type="html", xtable.caption.placement="top", xtable.include.row.names=FALSE)
-opts_chunk$set(comment=NA, echo=FALSE, warning=FALSE, message=FALSE, error=FALSE, fig.width=10, fig.height=5)
+#options(xtable.type="html", xtable.caption.placement="top", xtable.include.row.names=FALSE)
+# opts_chunk$set(comment=NA, echo=FALSE, warning=FALSE, message=FALSE, error=FALSE, fig.width=10, fig.height=5)
 
 # cleanbib()
 ```
