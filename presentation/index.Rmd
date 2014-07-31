@@ -191,12 +191,17 @@ Most freq mutation in P53 (50% of cases)
 Used a previously determined panel of genes with epigenetic silencing (also filtered using RNAseq data for genes with change in mRNA levels)
 </div>
 
-## Data for further analysis | Bipartite network
+## Data for further analysis | Selected functional events (SFEs)
+ 
 
-- 479 alterations
-  - 199 SNVs, 116 CN gains, 151 CN losses, 13 methylation events
-  - treated as binary variables (occured or not occured)
-  - network that connects samples to alterations
+<div class='centered'>
+<img src="images/sfes_piechart.png" width="45%" alt="SFEs">
+</div>
+
+<br/>
+
+- treated as binary variables (occured or not occured)
+- network that connects samples to alterations
 
 <div class="notes">
 stratify the >3000 tumors based on the 479 selected functional events
@@ -208,13 +213,13 @@ stratify the >3000 tumors based on the 479 selected functional events
 <img src="images/bipartite1.png" width="90%" alt="Bipartite graph">
 </div>
 
-## Bipartite network analysis | samples connected to alterations
+## Bipartite network analysis | Find optimal modules
 
 <div class='centered'>
 <img src="images/bipartite2.png" width="90%" alt="Bipartite graph">
 </div>
 
-## Data for further analysis | Bipartite network
+## Data for further analysis | Find optimal modules recursively
 
 <div class='centered'>
 <img src="images/bipartite3.png" width="90%" alt="Bipartite graph">
