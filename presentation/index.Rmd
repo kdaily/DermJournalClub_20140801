@@ -6,9 +6,10 @@ output:
   ioslides_presentation:
     css: default.css
     highlight: zenburn
+    slide_transition: faster
     pandoc_args: [
       # "--biblio", "references.bib"
-      # "--csl", "ecology.csl"
+      # "--csl", "ecology.csl"w
       ]
     # logo: images/dhsnihnci.png
     widescreen: true
@@ -33,24 +34,21 @@ opts_chunk$set(comment=NA, echo=FALSE, warning=FALSE, message=FALSE, error=FALSE
 
 # The Cancer Genome Atlas and the Pan-Cancer Initiative
 
-## The Cancer Genome Atlas (TCGA) | Sequencing and data generation of cancer samples
+## The Cancer Genome Atlas (TCGA) | Assay and analyze cancer samples
 
 <div class='centered'>
 <img src="images/tcgapancancercoord.png" height="80%" alt="TCGA Data Coordination">
 </div>
 
 <div class="notes">
-$> 200$ forms of cancer, and many more subtypes, caused by errors in DNA that cause cells to grow uncontrolled.
-
 HT techniques have allowed researchers to systematically explore the entire spectrum of genomic changes in many cancer types, many individual samples
 
-TCGA is performing this in more than 20 types of human cancer, about halfway done
+$> 200$ forms of cancer, and many more subtypes, caused by errors in DNA that cause cells to grow uncontrolled, there is a lot of space to explore to find oncogenic factors; and, in order to separate the drivers (signal) from passenger (noise) changes, a large number of samples of each tumor type is required. 
+
+Hence the goal of the TCGA, which is performing this in more than 20 types of human cancer with sample sizes $> 1000$ for some cancer types. They are about halfway done...
 
 Identifying the changes in each cancer’s complete set of DNA – its genome – and understanding how such changes interact to drive the disease will lay the foundation for improving cancer prevention, early detection and treatment.
 
-Importantly, it proved that making the data freely available would enable researchers anywhere around the world to make and validate important discoveries. The success of the pilot led the National Institutes of Health to commit major resources to TCGA to collect and characterize more than 20 additional tumor types.
-
-Led to integrative analysis and publication of many papers detailing specific cancer types
 
 However, that's not the only way this data can be used.
 
@@ -118,10 +116,10 @@ The paper under discussion today, titled "Emerging landscape of oncogenic signat
 - Oncogenic signatures were used to derive the oncogenic pathways
 - Nominated therapeutically actionable targets across tumor types
 
-## $>3299$ tumors, $12$ different cancer types | PANCAN12 dataset
+## $3299$ tumors, $12$ different cancer types | PANCAN12 dataset
 
 <div class='centered'>
-<img src="images/table1.png" width="50%" alt="Samples">
+<img src="images/table1.png" width="45%" alt="Samples">
 </div>
 
 <div class="notes">
@@ -135,18 +133,10 @@ BRCA, COADREAD, UCEC (endometroid) separated into their molecular subtypes from 
 
 <br />
 
-479 alterations - 199 SNVs, 116 CN gains, 151 CN losses, 13 methylation events, treated as binary variables (occured or not occured)
-
 </div>
 
 <div class="notes">
 First, only considered recurrent (present in two or more samples)
-Reduced copy number data using the algorithm GISTIC, combined with RNA-seq based expression data to only include genes affected by CNs whose expression was also altered (e.g. deletion significantly reduced expression relative to samples diploid at that position)
-
-Somatic mutations were reduced using MuSiC and MutSig (determine significance of mutated genes compared to local background mutation rates)
-
-Used a previously determined panel of genes with epigenetic silencing (also filtered using RNAseq data for genes with change in mRNA levels)
-
 </div>
 
 ## Integrated multiple types of alterations | Copy number aberrations (CNAs)
@@ -162,6 +152,8 @@ Used a previously determined panel of genes with epigenetic silencing (also filt
 </div>
 
 <div class="notes">
+Reduced copy number data using the algorithm GISTIC, combined with RNA-seq based expression data to only include genes affected by CNs whose expression was also altered (e.g. deletion significantly reduced expression relative to samples diploid at that position)
+
 Frequent loss of CDK2NA, MYC, other known cancer-related genes
 </div>
 
@@ -178,6 +170,8 @@ Frequent loss of CDK2NA, MYC, other known cancer-related genes
 </div>
 
 <div class="notes">
+Somatic mutations were reduced using MuSiC and MutSig (determine significance of mutated genes compared to local background mutation rates)
+
 Most freq mutation in P53 (50% of cases)
 </div>
 
@@ -193,21 +187,43 @@ Most freq mutation in P53 (50% of cases)
 <img src="images/fig1c2.png" width="60%" alt="Methyl 2">
 </div>
 
-
-## Hierarchical stratification to obtain clusters of tumors
-
-<div class='centered'>
-<img src="images/eqns.png" width="55%" alt="Equations">
+<div class="notes">
+Used a previously determined panel of genes with epigenetic silencing (also filtered using RNAseq data for genes with change in mRNA levels)
 </div>
+
+## Data for further analysis | Bipartite network
+
+- 479 alterations
+  - 199 SNVs, 116 CN gains, 151 CN losses, 13 methylation events
+  - treated as binary variables (occured or not occured)
+  - network that connects samples to alterations
 
 <div class="notes">
 stratify the >3000 tumors based on the 479 selected functional events
 </div>
 
+## Bipartite network analysis | samples connected to alterations
+
+<div class='centered'>
+<img src="images/bipartite1.png" width="90%" alt="Bipartite graph">
+</div>
+
+## Bipartite network analysis | samples connected to alterations
+
+<div class='centered'>
+<img src="images/bipartite2.png" width="90%" alt="Bipartite graph">
+</div>
+
+## Data for further analysis | Bipartite network
+
+<div class='centered'>
+<img src="images/bipartite3.png" width="90%" alt="Bipartite graph">
+</div>
+
 ## Hierarchical stratification to obtain clusters | Network modularity
 
 <div class='centered'>
-<img src="images/figS12_1.png" width="75%" alt="Cluster example 1">
+<img src="images/figS12_3.png" width="75%" alt="Cluster example 2">
 </div>
 
 <div class="notes">
@@ -221,22 +237,17 @@ Hence, this method is essentially a type of hierarchical clustering.
 
 For example, we have two node types here that have been partitioned into two modules, and each module has been partitioned into sub-modules.
 
-</div>
-
-## Hierarchical stratification to obtain clusters | Network modularity
-
-<div class='centered'>
-<img src="images/figS12_2.png" width="75%" alt="Cluster example 2">
-</div>
-
-<div class="notes">
 This network is not one for tumors, but for a dataset to test that their algorithm works
 from a study of "The Deep South: A Social Anthropological Study of Caste and Class"
 
 Also tested a network of Scottish company relationships in the 20th century...
 
-These were 
+</div>
 
+## Hierarchical stratification to obtain clusters of tumors
+
+<div class='centered'>
+<img src="images/eqns.png" width="55%" alt="Equations">
 </div>
 
 ## Observed two major clusters | M(utations) vs C(opy) number alterations
@@ -296,7 +307,7 @@ Importantly, there are no samples that are in the upper right of the plot - high
 <img src="images/figS4.png" width="65%" alt="Fig S4">
 </div>
 
-## Signatures used to derive oncogenic pathways | The M class
+## Signatures in the M class
 
 <div class='centered'>
 <img src="images/fig3M.png" width="85%" alt="Figure 3M">
@@ -321,7 +332,7 @@ However, M15-M17 were predominantly tissue-specific subsets (GBM (EGFR), LAML (N
 
 </div>
 
-## Signatures used to derive oncogenic pathways
+## Signatures in the C class
 
 <div class='centered'>
 <img src="images/fig3C.png" width="85%" alt="Figure 3C">
@@ -340,7 +351,7 @@ Subclasses C7 - C14 had alterations to the cell cycle arrest and DNA damage resp
 
 </div>
 
-## Therapeutically actionable targets | across tumor types
+## Therapeutically actionable targets | Four well studied pathways across tumor types
 
 <div class='centered'>
 <img src="images/fig4.png" width="35%" alt="Figure 4">
@@ -379,6 +390,18 @@ This is definitely only a starting place, and more samples and cancer types are 
 - Argues for tissue-independent classification and treatment of tumors
 - Almost all solid tumors, many other tumor types not covered
 - Though the methods should get better with more data
+
+---
+
+<div class='centered'>
+<img src="images/title.png" width="75%" alt="Title of this paper">
+</div>
+
+<br />
+<br />
+
+An Analysis is a new analysis of existing data (typically large genomic, transcriptomic or proteomic data sets from arrays or other high-throughput platforms) or new data obtained in a comparative analysis of technologies __that lead to novel and arresting conclusions of importance to a broad audience.__
+
 
 ## Synapse by Sage BioNetworks
 
