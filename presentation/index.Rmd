@@ -408,7 +408,7 @@ An Analysis is a new analysis of existing data (typically large genomic, transcr
 ## <img src="images/Sage_Bionetworks_logo.jpg" height="15%" alt="Sage Bionetworks">
 
 <div class='centered'>
-<img src="images/synapse_ng.2761-F2.png" width="45%" alt="Synapse">
+<img src="images/synapse_ng.2761-F2.png" width="40%" alt="Synapse">
 </div>
 
 ---
