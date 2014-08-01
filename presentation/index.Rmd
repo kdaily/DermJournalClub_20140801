@@ -35,7 +35,7 @@ output:
 ## The Cancer Genome Atlas (TCGA) | Assay and analyze cancer samples
 
 <div class='centered'>
-<img src="images/tcgapancancercoord.png" height="60%" alt="TCGA Data Coordination">
+<img src="images/tcgapancancercoord.png" width="50%" alt="TCGA Data Coordination">
 </div>
 
 <div class="notes">
