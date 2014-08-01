@@ -57,7 +57,7 @@ This led to the creation of the Pan-cancer initiative
 ## The TCGA Pan-Cancer Initiative
 
 <div class='centered'>
-<img src="images/tcgapancancer2.png" width="40%" alt="TCGA Pan-Cancer Initiative">
+<img src="images/tcgapancancer2.png" width="60%" alt="TCGA Pan-Cancer Initiative">
 </div>
 
 <div class="notes">
